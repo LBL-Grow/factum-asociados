@@ -1,0 +1,709 @@
+
+:root {
+    --bg: #ffffff;            /* Fondo blanco */
+    --surface: #f4f6f9;       /* Gris claro texturizado */
+    --primary: #0a3d62;       /* Azul Oscuro Profundo (Títulos y Logo) */
+    --secondary: #005792;     /* Azul Eléctrico Corporativo (Acentuados secundarios) */
+    --accent: #fbc531;        /* Amarillo/Dorado (Botón de conversión) */
+    --accent-light: #fff9e6;  /* Variante crema suave para interfaces móviles */
+    --text-main: #1e293b;     /* Gris pizarra muy oscuro para lectura fluida */
+    --text-dark: #64748b;     /* Gris sutil para descripciones y estados inactivos */
+    --border: #e2e8f0;        /* Líneas divisorias */
+    --font-heading: 'Segoe UI', -apple-system, sans-serif;
+    --font-body: 'Segoe UI', -apple-system, sans-serif;
+    --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); /* Transición cinemática suave */
+}
+
+/* Reset Estricto de Maquetación */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg);
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Contenedores Universales y Grid Global */
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 80px;
+}
+
+.dot {
+    color: var(--accent);
+}
+
+/* Etiquetas de Sección */
+.section-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--primary);
+    text-transform: uppercase;
+    border-left: 2px solid var(--accent);
+    padding-left: 8px;
+}
+
+/* ==========================================================================
+   CONTROL DE LOGOTIPO 
+   ========================================================================== */
+.brand-logo-img {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.logo-src {
+    height: 48px;            
+    width: auto;             
+    max-width: 200px;        
+    object-fit: contain;     
+    transition: var(--transition);
+}
+
+.logo-src:hover {
+    opacity: 0.85;
+}
+
+.footer-logo-img {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.logo-src-footer {
+    height: 42px;            
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+}
+
+/* ==========================================================================
+   HEADER / BARRA DE NAVEGACIÓN FLOTANTE
+   ========================================================================== */
+.site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.main-navigation .nav-links {
+    display: flex;
+    gap: 48px;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav-item:hover {
+    color: var(--primary);
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: var(--transition);
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-toggle, .burger-menu {
+    display: none;
+}
+
+/* ==========================================================================
+   HERO / PORTADA 
+   ========================================================================== */
+.hero-section {
+    padding-top: 140px;
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    background-image: 
+        url('images/fondo.png'), 
+        linear-gradient(to right, rgba(255, 255, 255, 0.96) 35%, rgba(255, 255, 255, 0.75) 100%), 
+        url('images/hero-ilustrativa.jpg');
+        
+    background-position: 
+        center center, 
+        center center, 
+        center center;
+        
+    background-repeat: 
+        no-repeat, 
+        no-repeat, 
+        no-repeat;
+        
+    background-size: 
+        cover, 
+        cover, 
+        cover;
+        
+    background-blend-mode: normal;
+    overflow: hidden;
+    filter: brightness(0.96) contrast(1.05);
+}
+
+.hero-content-full {
+    position: relative;
+    max-width: 720px; 
+    z-index: 10;
+}
+
+.hero-meta {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    color: var(--secondary);
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -2px;
+    margin-bottom: 32px;
+    color: var(--primary);
+}
+
+.gradient-text {
+    color: var(--text-dark);
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: 48px;
+    line-height: 1.7;
+}
+
+.hero-cta {
+    position: relative;
+    z-index: 99; 
+}
+
+.btn-luxury {
+    display: inline-block;
+    background-color: var(--accent);
+    color: var(--primary);
+    padding: 16px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: var(--transition);
+    border: 2px solid var(--accent);
+    box-shadow: 0 4px 15px rgba(251, 197, 49, 0.25);
+    cursor: pointer;
+}
+
+.btn-luxury:hover {
+    background-color: transparent;
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   ESTILOS GENERALES DE SECCIÓN Y CONTENIDO
+   ========================================================================== */
+section {
+    padding: 140px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.section-title-large {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+    color: var(--primary);
+}
+
+.paragraph-premium {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+/* ==========================================================================
+   SECCIÓN NOSOTROS 
+   ========================================================================== */
+.grid-nosotros {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr; 
+    gap: 64px;
+    align-items: flex-start;
+}
+
+.about-image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.about-portrait {
+    width: 100%;
+    height: auto;
+    max-height: 650px;
+    object-fit: cover;
+    border-radius: 12px; 
+    box-shadow: 0 20px 40px rgba(10, 61, 98, 0.08); 
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.portrait-shadow-box {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--surface);
+    border-radius: 12px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.section-label-mobile {
+    display: none;
+}
+
+.mv-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 48px;
+    border-top: 1px solid var(--border);
+    padding-top: 32px;
+}
+
+.mv-block h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--secondary);
+    margin-bottom: 12px;
+    position: relative;
+    display: inline-block;
+}
+
+.mv-block h3::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--accent);
+    margin-top: 4px;
+}
+
+.mv-block p {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   SECCION SERVICIOS 
+   ========================================================================== */
+.section-servicios {
+    padding: 140px 0; 
+}
+
+.services-header {
+    margin-bottom: 60px;
+}
+
+.premium-services-list {
+    margin-top: 20px;
+}
+
+.service-row {
+    display: grid;
+    grid-template-columns: 0.4fr 0.4fr 3fr 0.4fr;
+    padding: 48px 0;
+    border-top: 1px solid var(--border);
+    align-items: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.service-row:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+.service-icon-box {
+    font-size: 1.6rem;
+    color: var(--secondary); 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: var(--transition);
+}
+
+.service-num {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.service-meta h3 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.service-meta p {
+    color: var(--text-dark);
+    max-width: 800px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.service-arrow {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    text-align: right;
+    transition: var(--transition);
+}
+
+/* Efecto hover */
+.service-row:hover {
+    padding-left: 20px;
+    background-color: var(--surface);
+    border-top-color: var(--accent); 
+}
+
+.service-row:hover .service-icon-box {
+    color: var(--accent); 
+    transform: scale(1.15);
+}
+
+.service-row:hover .service-num {
+    color: var(--secondary);
+}
+
+.service-row:hover .service-arrow {
+    color: var(--secondary);
+    transform: translateX(10px);
+}
+
+.service-internal-list {
+    margin-top: 16px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.service-internal-list li {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    position: relative;
+    transition: var(--transition);
+}
+
+.service-internal-list li::before {
+    content: "—";
+    color: var(--secondary);
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+}
+
+.service-row:hover .service-internal-list li {
+    color: var(--text-main);
+}
+
+/* ==========================================================================
+   SECCION CONTACTO 
+   ========================================================================== */
+.section-contacto {
+    position: relative;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.88)), url('images/contacto-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.contact-right-channels {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+}
+
+.channel-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.channel-label {
+    font-size: 0.7rem;
+    color: var(--text-dark);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.btn-channel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--border);
+    padding: 18px 28px;
+    border-radius: 40px; 
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: var(--transition);
+}
+
+.btn-channel i {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    transition: var(--transition);
+}
+
+.btn-channel:hover {
+    background-color: var(--bg);
+    border-color: var(--secondary);
+    color: var(--secondary);
+    padding-left: 36px; 
+    box-shadow: 0 10px 25px rgba(0, 87, 146, 0.05);
+}
+
+.btn-channel:hover i {
+    color: var(--secondary);
+    transform: scale(1.15);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer {
+    background-color: var(--surface);
+    padding: 100px 0 40px 0;
+    border-top: 1px solid var(--border);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(2, 1fr); 
+    gap: 60px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid var(--border);
+}
+
+.footer-tagline {
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    margin-top: 12px;
+}
+
+.footer-grid h4 {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin-bottom: 24px;
+    font-weight: 700;
+    border-left: 2px solid var(--accent); 
+    padding-left: 6px;
+}
+
+.footer-grid a {
+    display: block;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.footer-grid a:hover {
+    color: var(--secondary);
+    transform: translateX(4px);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--text-dark);
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (ADAPTABILIDAD MÓVIL ESTRICTA)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .hero-title { font-size: 3.2rem; }
+    .grid-nosotros { grid-template-columns: 1fr; gap: 48px; }
+    .services-header { grid-template-columns: 1fr; gap: 16px; }
+    .service-row { grid-template-columns: 0.2fr 0.2fr 2.3fr 0.3fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+    .container, .header-container { padding: 0 24px; }
+    
+    .logo-src {
+        height: 38px;        
+        max-width: 150px;
+    }
+    
+    .header-container {
+        height: 75px;        
+    }
+
+    .hero-section {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.98) 50%, rgba(255, 255, 255, 0.9) 100%), url('images/fondo.png'), url('images/hero-ilustrativa.jpg');
+        background-position: center center, center 90%, center center;
+        background-size: cover, contain, cover;
+        padding-top: 160px;
+        filter: none; 
+    }
+    
+    .hero-title { font-size: 2.4rem; }
+
+    .grid-nosotros { grid-template-columns: 1fr; gap: 40px; }
+    .desktop-only { display: none; }
+    .section-label-mobile {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: var(--primary);
+        text-transform: uppercase;
+        border-left: 2px solid var(--accent);
+        padding-left: 8px;
+        margin-bottom: 24px;
+    }
+    .about-portrait { max-height: 500px; }
+    .portrait-shadow-box { display: none; }
+    .mv-container { grid-template-columns: 1fr; gap: 32px; }
+
+    /* Adaptación de servicios continuos en móvil */
+    .services-header p { margin-top: 8px; }
+    .service-row {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+        padding: 32px 0;
+    }
+    .service-icon-box { font-size: 1.8rem; margin-bottom: 4px; }
+    .service-arrow { text-align: left; margin-top: 8px; }
+
+    .contact-right-channels { margin-top: 16px; gap: 24px; }
+    .btn-channel { padding: 14px 20px; font-size: 0.95rem; }
+
+    /* Menú Hamburguesa Móvil */
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+        z-index: 3000;
+    }
+    
+    .burger-menu .line {
+        display: block;
+        width: 28px;
+        height: 2px;
+        background-color: var(--primary);
+        transition: var(--transition);
+    }
+
+    .main-navigation {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--accent-light); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition);
+    }
+
+    .main-navigation .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .nav-item { font-size: 1.8rem; color: var(--primary); }
+
+    .nav-toggle:checked ~ .main-navigation { left: 0; }
+    .nav-toggle:checked ~ .burger-menu .line:nth-child(1) { transform: translateY(4px) rotate(45deg); }
+    .nav-toggle:checked ~ .burger-menu .line:nth-child(2) { transform: translateY(-4px) rotate(-45deg); }
+
+    .section-title-large { font-size: 2rem; }
+    .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+}
