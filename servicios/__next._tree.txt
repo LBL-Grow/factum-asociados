@@ -5,4 +5,4 @@
 :HL["/_next/static/media/NunitoSans_7pt_Medium-s.p.132vjw5oug3bh.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
 :HL["/_next/static/media/NunitoSans_7pt_Regular-s.p.2q-_s0fw72dyl.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
 :HL["/_next/static/media/NunitoSans_7pt_SemiBold-s.p.12811289v-a9n.ttf","font",{"crossOrigin":"","type":"font/ttf"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"servicios","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"YxBSlM_M38G__vLkLyc-W"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"servicios","param":null,"prefetchHints":4160,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"rubxTT9gyZ42gMdMgX_22"}
