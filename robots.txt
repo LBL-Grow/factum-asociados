@@ -1,4 +1,28 @@
-User-Agent: *
+# robots.txt — https://www.factumasociados.com
+# Factum & Asociados S.A.S. · Firma contable y tributaria en Sabaneta, Antioquia.
+# Todo el sitio es público: no hay zonas privadas ni parámetros que bloquear.
+
+# Buscadores
+User-agent: *
 Allow: /
 
+# Asistentes y buscadores de IA: pueden leer y citar el sitio.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+Allow: /
+
+# Mapa del sitio
 Sitemap: https://www.factumasociados.com/sitemap.xml
+
+# Resumen del sitio para modelos de lenguaje
+# https://www.factumasociados.com/llms.txt
+# https://www.factumasociados.com/llms-full.txt
