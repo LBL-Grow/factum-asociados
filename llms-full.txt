@@ -261,6 +261,81 @@ Herramienta en línea que compara, de forma orientativa, el impuesto estimado de
 
 ## Blog
 
+### Revisor fiscal: cuándo es obligatorio para su empresa y cómo elegir la firma
+
+URL: https://www.factumasociados.com/blog/revisor-fiscal-cuando-es-obligatorio-y-como-elegirlo/
+Categoría: Revisoría fiscal · Publicado: 2026-11-12
+
+Los topes que obligan a una sociedad a tener revisor fiscal, cómo se miden, qué pasa si no lo tiene y qué preguntar antes de contratar una firma de revisoría fiscal.
+
+Si su sociedad cerró el año con activos brutos iguales o superiores a 5.000 salarios mínimos, o con ingresos brutos iguales o superiores a 3.000, tiene que nombrar un revisor fiscal. Lo que cuenta es el cierre al 31 de diciembre del año anterior. Esa es la respuesta corta. Lo difícil suele ser lo que viene después: medirlo bien, nombrar a la persona correcta y no confundirlo con el contador.
+
+#### Qué hace un revisor fiscal
+
+Fiscaliza. Revisa que la empresa cumpla la ley y sus propios estatutos, verifica que la contabilidad refleje la realidad y firma el dictamen de los estados financieros. Responde ante los socios y ante el Estado, no ante la gerencia.
+
+Por eso no puede ser empleado de la empresa ni llevarle la contabilidad. Si el que registra las cuentas es el mismo que las vigila, la revisión no sirve de mucho.
+
+#### Los dos topes
+
+La obligación sale del artículo 13 de la Ley 43 de 1990. Una sociedad comercial debe tener revisor fiscal si se cumple cualquiera de estas dos condiciones:
+
+- Los activos brutos a 31 de diciembre del año anterior son iguales o superiores a 5.000 salarios mínimos mensuales legales vigentes.
+- Los ingresos brutos de ese año son iguales o superiores a 3.000 salarios mínimos.
+
+Basta con una. No hace falta cumplir las dos.
+
+Dos aclaraciones que ahorran errores. Primero, los ingresos brutos son los que aparecen en el estado de resultados, sin restar devoluciones, costos ni gastos. Una empresa con pocas utilidades puede estar obligada igual, porque el tope mira lo que facturó, no lo que le quedó. Segundo, se mide con los estados financieros de cierre. Lo que la empresa llegó a tener a mitad de año no cambia nada.
+
+Por eso enero es buen momento para hacer la cuenta. Con los estados financieros cerrados, usted sabe si este año le toca.
+
+#### ¿Y las SAS?
+
+Las sociedades por acciones simplificadas solo están obligadas cuando superan esos mismos topes, según el artículo 28 de la Ley 1258 de 2008. Otras sociedades, como las anónimas o las sucursales de empresas extranjeras, pueden tener obligaciones por su forma o por normas especiales sin importar el tamaño. Si su caso no es el de una SAS, confírmelo antes de dar por hecho que está libre.
+
+#### Qué pasa si está obligada y no lo tiene
+
+Los estados financieros salen sin dictamen, y la Superintendencia de Sociedades puede no tenerlos por recibidos e imponer multas. Además, lo habitual es que la asamblea o la junta tenga que convocarse para hacer el nombramiento, que después se registra en la Cámara de Comercio. Es mejor hacerlo con calma que bajo un requerimiento.
+
+#### Revisor fiscal, contador y auditor: tres papeles distintos
+
+- El contador registra y prepara la información. Trabaja para la empresa.
+- El revisor fiscal vigila que todo eso esté bien hecho y que la empresa cumpla las normas. Es independiente y dictamina.
+- La auditoría financiera es un examen independiente de los estados financieros que cualquier empresa puede contratar, esté o no obligada a tener revisor fiscal.
+
+Muchas empresas contratan el outsourcing contable con una firma y la revisoría fiscal con otra, justamente para mantener esa separación. Si quiere ver cómo se compara el servicio contable, tenemos una guía sobre qué incluye el outsourcing contable y cómo cotizarlo.
+
+#### Qué preguntar antes de contratar una firma
+
+Quien firma el dictamen compromete su tarjeta profesional, así que conviene hablar con él antes de decidir y no solo con el área comercial.
+
+- ¿Quién será el revisor fiscal principal y quién el suplente? Pídales los nombres y confirme que son contadores públicos con tarjeta profesional vigente.
+- ¿Cada cuánto visitan la empresa y qué revisan en cada visita?
+- ¿Qué informes recibe la gerencia y en qué plazos?
+- ¿Tienen experiencia en empresas de su sector y de su tamaño?
+- ¿Prestan algún otro servicio a la empresa que pueda comprometer su independencia?
+- ¿De qué depende el valor? En revisoría, normalmente de la complejidad de la operación, el volumen de transacciones, el número de sedes y la frecuencia de las visitas.
+
+Una cotización muy baja que deja por fuera visitas o informes no es una ganancia: es una revisión más delgada.
+
+#### Si no está obligada, ¿vale la pena?
+
+A veces sí. Hay empresas que contratan revisoría o auditoría de forma voluntaria cuando entra un socio nuevo, cuando piden un crédito grande o cuando la gerencia quiere un ojo externo sobre el control interno. No es un gasto para todos, pero tampoco es un servicio exclusivo de las empresas grandes.
+
+#### Preguntas frecuentes
+
+¿El revisor fiscal puede ser un empleado de la empresa? No. Debe ser independiente de la administración.
+
+¿Quién lo nombra? La asamblea de accionistas o la junta de socios, según los estatutos.
+
+¿Se mide una sola vez? Se mide cada año con los estados financieros del 31 de diciembre anterior. Una empresa puede quedar obligada un año y salir de la obligación otro.
+
+¿Cuánto cuesta? No existe una cifra única honesta. Depende de la operación de cada empresa, y la forma correcta de saberlo es una cotización a medida.
+
+#### Cómo seguir
+
+Si no tiene claro si su sociedad está obligada o quiere comparar propuestas de revisoría, escríbanos con el tipo de sociedad, los activos y los ingresos del último cierre. Con eso le decimos si le toca y qué alcance tendría el servicio. Puede empezar desde la página de revisoría fiscal y auditoría financiera.
+
 ### Outsourcing contable: qué incluye y qué revisar antes de pedir una cotización
 
 URL: https://www.factumasociados.com/blog/outsourcing-contable-que-incluye-y-como-cotizar/
